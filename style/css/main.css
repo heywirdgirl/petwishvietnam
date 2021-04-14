@@ -74,12 +74,17 @@ button {
   align-items: center;
   flex-wrap: wrap;
   padding: 1rem 0;
-  border-bottom: 1px solid #ffffff;
 }
 .header .navbar__brand {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #ffffff;
+  margin-left: 2rem;
+}
+.header .navbar__brand::before {
+  content: "";
+  background-image: url("../../asset/logo.jpg");
+  background-size: contain;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
 }
 @media screen and (min-width: 500px) {
   .header .navbar__brand {

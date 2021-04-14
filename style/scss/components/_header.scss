@@ -21,14 +21,17 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 1rem 0;
-        border-bottom: 1px solid $white-color;
-
         // brand
         &__brand {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: $white-color;
-
+            &::before {
+                content: "";
+                background-image: url("../../asset/logo.jpg");
+                background-size: contain;
+                display: inline-block;
+                width: 2em;
+                height: 2em;
+            }
+            margin-left:2rem;
             //  responsive
             @include media-sm {
                 font-size: 2rem;
@@ -249,8 +252,9 @@
                 transition: $transition;
 
                 @include media-sm {
-                    margin-left:0;
+                    margin-left: 0;
                 }
+
                 &:hover {
                     opacity: 0.8;
                 }
