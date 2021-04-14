@@ -1,0 +1,105 @@
+.product-home {
+     padding:5rem 0;
+    .product__list {
+        margin-left:5rem;
+        font-size: 1.5rem;
+        &::before {
+            content: "";
+            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
+            background-size: contain;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            position: relative;
+            top: 0.1rem;
+            margin-right: 0.2rem;
+        }
+        & a{
+            display:inline-block;
+            padding: 1rem;
+        }
+        & span{
+            display:inline-block;
+            padding-left: 2rem;
+        }
+        & a:hover {
+            background: #aed9e5;
+            text-decoration: underline;
+        }
+    }
+}
+.product {
+    .product-wrapper {
+        .product__title {
+            margin-top:3rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .product__item-wrapper {
+
+            // responsive
+            @include media-medium-1 {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-gap: 2rem;
+            }
+
+            .product__item {
+                border-radius: 1.6rem;
+                margin: 2rem 0;
+                padding: 0 0 6rem 0;
+                text-align: center;
+                position: relative;
+                transition: $transition;
+
+                &:hover {
+                    background: $white-smoke-color;
+                }
+
+                // img
+                &__img {
+                    width: 100%;
+                    margin: 0 auto;
+
+                    // responsive
+                    @include media-sm {
+                        width: 100%;
+                    }
+                }
+
+                // info
+                &__info {
+                    padding: 1rem;
+                }
+
+                // title
+                .title {
+                    font-size: 1.8rem;
+                    font-weight: 800;
+                }
+
+                // ratings
+                .ratings span {
+                    color: $emperor-color;
+                }
+
+                // text
+                .text {
+                    color: $emperor-color;
+                    font-weight: 400;
+                    width: 90%;
+                    margin-right: auto;
+                    margin-left: auto;
+
+                    // responsive
+                    @include media-sm {
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
