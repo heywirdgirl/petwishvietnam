@@ -76,15 +76,19 @@ button {
   padding: 1rem 0;
 }
 .header .navbar__brand {
+  /* &::before {
+       content: "";
+       background-image: url("../../asset/logo.jpg");
+       background-size: contain;
+       display: inline-block;
+       width: 2em;
+       height: 2em;
+   }
+   */
   margin-left: 2rem;
-}
-.header .navbar__brand::before {
-  content: "";
-  background-image: url("../../asset/logo.jpg");
-  background-size: contain;
-  display: inline-block;
-  width: 2em;
-  height: 2em;
+  z-index: 1;
+  color: white;
+  font-size: 2rem;
 }
 @media screen and (min-width: 500px) {
   .header .navbar__brand {
@@ -259,7 +263,7 @@ button {
   }
 }
 .header .header-banner__box .nav-icons--phone {
-  margin-top: 24rem;
+  margin-top: 17rem;
   margin-left: 4rem;
   color: #ffffff;
   font-size: 1.5rem;
@@ -270,6 +274,9 @@ button {
 .header .header-banner__box .nav-icons--phone h4 {
   padding: 1rem 0;
   text-align: left;
+}
+.header .header-banner__box .nav-icons--phone a {
+  color: #ffffff;
 }
 .header .header-banner__box .nav-icons--phone i {
   margin-right: 5rem;
@@ -369,19 +376,13 @@ button {
   padding: 5rem 0;
 }
 .product-home .product__list {
-  margin-left: 5rem;
+  margin-left: 2rem;
   font-size: 1.5rem;
 }
-.product-home .product__list::before {
-  content: "";
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
-  background-size: contain;
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  position: relative;
-  top: 0.1rem;
-  margin-right: 0.2rem;
+@media only screen and (min-width: 768px) {
+  .product-home .product__list {
+    margin-left: 5rem;
+  }
 }
 .product-home .product__list a {
   display: inline-block;

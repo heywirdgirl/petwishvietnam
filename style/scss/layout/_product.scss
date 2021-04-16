@@ -1,37 +1,35 @@
 .product-home {
-     padding:5rem 0;
+    padding: 5rem 0;
+
     .product__list {
-        margin-left:5rem;
-        font-size: 1.5rem;
-        &::before {
-            content: "";
-            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/fb-heart.gif);
-            background-size: contain;
-            display: inline-block;
-            width: 1em;
-            height: 1em;
-            position: relative;
-            top: 0.1rem;
-            margin-right: 0.2rem;
+        margin-left: 2rem;
+
+        @include media-medium-1 {
+            margin-left: 5rem;
         }
-        & a{
-            display:inline-block;
+
+        font-size: 1.5rem;
+        & a {
+            display: inline-block;
             padding: 1rem;
         }
-        & span{
-            display:inline-block;
+
+        & span {
+            display: inline-block;
             padding-left: 2rem;
         }
+
         & a:hover {
             background: #aed9e5;
             text-decoration: underline;
         }
     }
 }
+
 .product {
     .product-wrapper {
         .product__title {
-            margin-top:3rem;
+            margin-top: 3rem;
             text-align: center;
             font-size: 2rem;
             font-weight: 800;

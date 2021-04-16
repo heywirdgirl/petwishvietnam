@@ -21,9 +21,11 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 1rem 0;
+
         // brand
         &__brand {
-            &::before {
+        
+           /* &::before {
                 content: "";
                 background-image: url("../../asset/logo.jpg");
                 background-size: contain;
@@ -31,7 +33,11 @@
                 width: 2em;
                 height: 2em;
             }
+            */
             margin-left:2rem;
+            z-index:1;
+            color: white;
+            font-size: 2rem;
             //  responsive
             @include media-sm {
                 font-size: 2rem;
@@ -239,11 +245,15 @@
                     text-align: left;
                 }
 
+                a {
+                    color: $white-color;
+                }
+
                 i {
                     margin-right: 5rem;
                 }
 
-                margin-top:24rem;
+                margin-top:17rem;
                 margin-left:4rem;
                 color: $white-color;
                 font-size: 1.5rem;
