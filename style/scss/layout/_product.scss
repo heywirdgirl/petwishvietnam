@@ -1,31 +1,18 @@
 .product-home {
-    padding: 5rem 0;
-
-    .product__list {
-        margin-left: 2rem;
-
-        @include media-medium-1 {
-            margin-left: 5rem;
-        }
-
-        font-size: 1.5rem;
-        & a {
-            display: inline-block;
-            padding: 1rem;
-        }
-
-        & span {
-            display: inline-block;
-            padding-left: 2rem;
-        }
-
-        & a:hover {
-            background: #aed9e5;
-            text-decoration: underline;
+    padding: 5rem 0; 
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      @include media-medium-1 {
+        flex-direction:row;
+     }
+      .flex-item{
+          padding:2rem;
+          flex: 100%;
         }
     }
 }
-
 .product {
     .product-wrapper {
         .product__title {
