@@ -226,7 +226,7 @@ button {
       @media screen and (min-width: 500px) {
         .header .header-banner__box .nav-icons--phone {
           margin-left: 0;
-          margin-top: 20rem; } }
+          margin-top: 16rem; } }
       .header .header-banner__box .nav-icons--phone:hover {
         opacity: 0.8; }
     @media only screen and (min-width: 992px) {
@@ -302,7 +302,7 @@ button {
       flex: 100%; }
 
 .product .product-wrapper .product__title {
-  margin-top: 3rem;
+  margin: 3rem 1rem;
   text-align: center;
   font-size: 2rem;
   font-weight: 800;
